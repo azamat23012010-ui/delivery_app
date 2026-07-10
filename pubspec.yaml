@@ -39,6 +39,9 @@ dependencies:
   adaptive_theme: ^3.7.2
   easy_localization: ^3.0.8
   yandex_mapkit: ^4.1.0
+  flutter_bloc: ^9.1.1
+  bloc: ^9.2.1
+  dio: ^5.10.0
 
 dev_dependencies:
   flutter_test:

@@ -101,16 +101,14 @@ class _SettingsScreenState extends State<SettingsScreen> {
                               : const Color(0xff1A1D23),
                           borderRadius: BorderRadius.circular(12),
                           boxShadow:
-                              AdaptiveTheme.of(context).mode ==
-                                  AdaptiveThemeMode.light
-                              ? const [
+                                [
                                   BoxShadow(
-                                    color: Colors.black12,
+                                    color: AdaptiveTheme.of(context).mode == AdaptiveThemeMode.light ?  Colors.black12  : Colors.black12,
                                     blurRadius: 12,
                                     offset: Offset(0, 4),
                                   ),
                                 ]
-                              : [],
+                              
                         ),
                         child: Column(
                           children: List.generate(section.items.length, (
@@ -269,16 +267,13 @@ class _SettingsScreenState extends State<SettingsScreen> {
                         : const Color(0xff1A1D23),
                     borderRadius: BorderRadius.circular(12),
                     boxShadow:
-                        AdaptiveTheme.of(context).mode ==
-                            AdaptiveThemeMode.light
-                        ? const [
+                        [
                             BoxShadow(
                               color: Colors.black12,
                               blurRadius: 12,
                               offset: Offset(0, 4),
                             ),
-                          ]
-                        : [],
+                          ],
                   ),
                   child: Text(
                     LocaleKeys.logout.tr(),

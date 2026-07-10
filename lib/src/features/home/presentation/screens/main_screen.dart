@@ -1,5 +1,5 @@
 import 'package:delivery_app/src/features/history/screens/history_screen.dart';
-import 'package:delivery_app/src/features/home/screens/home_screen.dart';
+import 'package:delivery_app/src/features/home/presentation/screens/home_screen.dart';
 import 'package:delivery_app/src/features/settings/screens/settings_screen.dart';
 import 'package:delivery_app/src/features/settings/widgets/bottom_bar_widgets.dart';
 import 'package:delivery_app/src/core/localization/locale_keys.g.dart';

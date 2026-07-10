@@ -28,7 +28,7 @@ class HomeSearchBar extends StatelessWidget {
 
         filled: true,
         fillColor: AdaptiveTheme.of(context).mode == AdaptiveThemeMode.light
-            ? Colors.grey.shade300
+            ? Colors.white
             : Colors.grey.shade700,
         hintText: LocaleKeys.tracking_number_or_address.tr(),
         hintStyle: GoogleFonts.inter(
@@ -40,15 +40,25 @@ class HomeSearchBar extends StatelessWidget {
         ),
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(99),
-          borderSide: BorderSide(color: Colors.white),
+          borderSide: BorderSide(
+            color: AdaptiveTheme.of(context).mode == AdaptiveThemeMode.light
+                ? Colors.white
+                : const Color.fromARGB(255, 79, 77, 77),
+          ),
         ),
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(99),
-          borderSide: BorderSide(color: Colors.white),
+          borderSide: BorderSide(
+            color: AdaptiveTheme.of(context).mode == AdaptiveThemeMode.light
+                ? Colors.white
+                : const Color.fromARGB(255, 79, 77, 77),
+          ),
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(99),
-          borderSide: BorderSide(color: Colors.white),
+          borderSide: BorderSide(color: AdaptiveTheme.of(context).mode == AdaptiveThemeMode.light
+                ? Colors.white
+                : const Color.fromARGB(255, 79, 77, 77),),
         ),
       ),
     );

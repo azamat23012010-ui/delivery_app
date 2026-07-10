@@ -1,7 +1,7 @@
 import 'package:adaptive_theme/adaptive_theme.dart';
 import 'package:delivery_app/src/core/localization/locale_keys.g.dart';
 import 'package:delivery_app/src/core/widgets/app_bar_widget.dart';
-import 'package:delivery_app/src/features/home/widgets/search_bar.dart';
+import 'package:delivery_app/src/features/home/presentation/widgets/search_bar.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:yandex_mapkit/yandex_mapkit.dart';
