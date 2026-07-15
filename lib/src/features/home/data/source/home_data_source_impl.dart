@@ -12,7 +12,7 @@ class HomeDataSourceImpl extends HomeDataSource {
   Future<Either<Failure, List<ServiceModel>>> getServiceLocations() async {
     try {
       final response = await Dio()
-          .get("https://6a4b93d8f5eab0bb6b630ac9.mockapi.io/api/v1/services");
+          .get("https://6a54cf95e49d9eb2cc552bd5.mockapi.io/services");
 
       if (response.statusCode != null &&
           response.statusCode! >= 200 &&

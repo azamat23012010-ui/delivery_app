@@ -1,5 +1,3 @@
-import 'package:equatable/equatable.dart';
-
 /// Signature of callbacks that have no arguments and return right or left value.
 typedef Callback<T> = void Function(T value);
 

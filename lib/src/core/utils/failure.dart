@@ -27,8 +27,8 @@ class DioFailure extends Failure {
   final String? errorMessage;
   final bool? exists;
 
-  const DioFailure({this.errorMessage, this.exists, String errorCode = ''})
-      : super(message: errorMessage ?? '', errorCode: errorCode);
+  const DioFailure({this.errorMessage, this.exists, super.errorCode})
+      : super(message: errorMessage ?? '');
 }
 
 class ParsingFailure extends Failure {

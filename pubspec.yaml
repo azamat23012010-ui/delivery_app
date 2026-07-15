@@ -42,6 +42,9 @@ dependencies:
   flutter_bloc: ^9.1.1
   bloc: ^9.2.1
   dio: ^5.10.0
+  equatable: ^2.1.0
+  permission_handler: ^12.0.3
+  geolocator: ^14.0.3
 
 dev_dependencies:
   flutter_test:
